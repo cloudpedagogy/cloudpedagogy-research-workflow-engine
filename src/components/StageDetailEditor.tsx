@@ -35,6 +35,15 @@ export function StageDetailEditor({ stage, onChange, onClose }: Props) {
       </div>
 
       <div className="form-group">
+        <label style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Optional: Rationale</label>
+        <textarea 
+          value={stage.rationale || ''}
+          onChange={e => update({ rationale: e.target.value })}
+          placeholder="Why are we taking this approach for this stage?"
+        />
+      </div>
+
+      <div className="form-group">
         <label>Inputs</label>
         <input 
           value={stage.inputs}
@@ -101,6 +110,15 @@ export function StageDetailEditor({ stage, onChange, onClose }: Props) {
         <textarea 
           value={stage.ethicsConsiderations}
           onChange={e => update({ ethicsConsiderations: e.target.value })}
+        />
+      </div>
+
+      <div className="form-group">
+        <label style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Optional: Assumptions</label>
+        <textarea 
+          value={stage.assumptions || ''}
+          onChange={e => update({ assumptions: e.target.value })}
+          placeholder="What must be assumed to be true for this stage?"
         />
       </div>
 

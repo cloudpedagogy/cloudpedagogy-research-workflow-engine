@@ -80,6 +80,13 @@ This helps ensure research workflows are:
 
 ---
 
+## Additional Documentation
+
+- [User Instructions](./INSTRUCTIONS.md)
+- [Project Specification](./PROJECT_SPEC.md)
+
+---
+
 ## Run Locally
 
 npm install  

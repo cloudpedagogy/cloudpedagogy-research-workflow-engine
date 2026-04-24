@@ -6,7 +6,9 @@ export const demoState: AppState = {
     researchArea: "Epidemiology",
     studyType: "Observational Study",
     organisation: "School of Public Health",
-    description: "A study examining the relationship between urban air pollution exposure and respiratory health outcomes using large-scale datasets."
+    description: "A study examining the relationship between urban air pollution exposure and respiratory health outcomes using large-scale datasets.",
+    rationale: "To provide evidence-based insights for urban planning and public health interventions aimed at reducing respiratory diseases.",
+    risks: "Potential for data bias in socio-economic representation; reliance on third-party environmental sensors."
   },
   stages: [
     {
@@ -71,7 +73,9 @@ export const emptyState: AppState = {
     researchArea: "",
     studyType: "",
     organisation: "",
-    description: ""
+    description: "",
+    rationale: "",
+    risks: ""
   },
   stages: [],
   globalRisks: [],

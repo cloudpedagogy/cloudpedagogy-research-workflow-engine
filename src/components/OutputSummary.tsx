@@ -40,6 +40,24 @@ export function OutputSummary({ state }: Props) {
               <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>Description</th>
               <td style={{ padding: '8px 0', border: 'none' }}>{meta.description || '-'}</td>
             </tr>
+            {meta.rationale && (
+              <tr>
+                <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>Rationale</th>
+                <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.rationale}</td>
+              </tr>
+            )}
+            {meta.risks && (
+              <tr>
+                <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>Project Risks</th>
+                <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.risks}</td>
+              </tr>
+            )}
+            {meta.assumptions && (
+              <tr>
+                <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>Assumptions</th>
+                <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.assumptions}</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </section>
@@ -54,7 +72,10 @@ export function OutputSummary({ state }: Props) {
             {stages.map((stage) => (
               <div key={stage.id} style={{ border: '1px solid var(--color-border-default)', borderRadius: '4px', padding: '16px' }}>
                 <h3 style={{ marginTop: 0 }}>Stage {stage.order}: {stage.title}</h3>
-                <p style={{ marginBottom: '16px' }}>{stage.description}</p>
+                <p style={{ marginBottom: stage.rationale ? '8px' : '16px' }}>{stage.description}</p>
+                {stage.rationale && (
+                  <p style={{ marginBottom: '16px', fontSize: '0.9rem' }}><strong>Rationale:</strong> {stage.rationale}</p>
+                )}
                 
                 <table style={{ marginBottom: '16px', fontSize: '0.9rem' }}>
                   <tbody>
@@ -82,7 +103,9 @@ export function OutputSummary({ state }: Props) {
                   </div>
                   <div>
                     <h4 style={{ margin: '0 0 4px 0', fontSize: '0.9rem' }}>Reproducibility Notes</h4>
-                    <p style={{ margin: 0 }}>{stage.reproducibilityNotes || '-'}</p>
+                    <p style={{ margin: '0 0 8px 0' }}>{stage.reproducibilityNotes || '-'}</p>
+                    <h4 style={{ margin: '0 0 4px 0', fontSize: '0.9rem' }}>Assumptions</h4>
+                    <p style={{ margin: 0 }}>{stage.assumptions || '-'}</p>
                   </div>
                 </div>
               </div>

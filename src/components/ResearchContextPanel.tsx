@@ -46,6 +46,30 @@ export function ResearchContextPanel({ state, onChange }: Props) {
           onChange={e => onChange({ description: e.target.value })} 
         />
       </div>
+      <div className="form-group">
+        <label style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Optional: Rationale</label>
+        <textarea 
+          value={meta.rationale || ''} 
+          onChange={e => onChange({ rationale: e.target.value })} 
+          placeholder="Why is this research being conducted? What is the core reasoning?"
+        />
+      </div>
+      <div className="form-group">
+        <label style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Optional: Project-wide Risks / Concerns</label>
+        <textarea 
+          value={meta.risks || ''} 
+          onChange={e => onChange({ risks: e.target.value })} 
+          placeholder="High-level risks or concerns for this project..."
+        />
+      </div>
+      <div className="form-group" style={{ marginBottom: 0 }}>
+        <label style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Optional: Assumptions</label>
+        <textarea 
+          value={meta.assumptions || ''} 
+          onChange={e => onChange({ assumptions: e.target.value })} 
+          placeholder="Global assumptions for this research project..."
+        />
+      </div>
     </div>
   );
 }

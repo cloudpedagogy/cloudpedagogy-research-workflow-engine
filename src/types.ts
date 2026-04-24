@@ -12,6 +12,9 @@ export interface Meta {
   studyType: string;
   organisation?: string;
   description: string;
+  rationale?: string;
+  risks?: string;
+  assumptions?: string;
 }
 
 export interface Stage {
@@ -27,6 +30,8 @@ export interface Stage {
   risks: string;
   ethicsConsiderations: string;
   reproducibilityNotes: string;
+  rationale?: string;
+  assumptions?: string;
 }
 
 export interface InstitutionalNotes {
