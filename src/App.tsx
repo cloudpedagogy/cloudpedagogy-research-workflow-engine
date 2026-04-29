@@ -4,6 +4,7 @@ import { demoState, emptyState } from './demoData';
 import { ResearchContextPanel } from './components/ResearchContextPanel';
 import { WorkflowStagesPanel } from './components/WorkflowStagesPanel';
 import { RiskEthicsPanel } from './components/RiskEthicsPanel';
+import { CapabilityGovernancePanel } from './components/CapabilityGovernancePanel';
 import { OutputSummary } from './components/OutputSummary';
 import './index.css';
 
@@ -134,6 +135,9 @@ function App() {
           onChangeRisks={updateGlobalRisks} 
           onChangeNotes={updateInstitutionalNotes} 
         />
+
+        {/* Lightweight capability and governance layer - Optional, non-blocking, and does not alter core workflow */}
+        <CapabilityGovernancePanel meta={state.meta} onChange={updateMeta} />
         
         <div className="cp-hide-print" style={{ textAlign: 'center', marginTop: '24px', marginBottom: '24px' }}>
           <button className="cp-button-primary" onClick={handlePrint} style={{ marginRight: '16px' }}>Print / Save PDF</button>

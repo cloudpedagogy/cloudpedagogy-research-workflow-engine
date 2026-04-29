@@ -79,7 +79,18 @@ The tool expects the following data points:
 
 ---
 
-### 10. Tips
-- **Be Granular:** Break your research into smaller, distinct stages to capture more precise AI involvement.
-- **Document Prompts:** Use the "Reproducibility Notes" section to record specific AI prompts, model versions, or configurations used.
-- **Regular Exports:** Since data is stored in your browser's local storage, export your JSON regularly to avoid data loss if you clear your browser cache.
+---
+
+### 11. Capability and Governance
+#### How capability is developed through use
+The tool supports the development of practical AI capability by prompting researchers to think critically about the balance between AI assistance and human oversight at every stage of the research lifecycle. By explicitly mapping these roles, users develop a more nuanced understanding of where AI adds value and where human judgment remains critical.
+
+#### How governance is supported
+Governance is supported through optional fields in the "Capability & Governance Notes" section. These fields make project-level assumptions, risks, and AI involvement visible and reviewable. This transparency ensures that AI use is not just documented but is subject to ongoing reflection and accountability.
+
+#### Explanation of optional fields
+- **AI Involvement**: A high-level description of the role AI plays across the entire project.
+- **Assumptions**: Key premises or conditions being taken for granted in the research design.
+- **Risks**: Potential issues or concerns that could impact the integrity or outcome of the research.
+- **Rationale**: The reasoning behind the chosen research design and AI integration.
+- **Human Review Notes**: Specific notes on oversight, ethical checkpoints, or human-in-the-loop interventions.

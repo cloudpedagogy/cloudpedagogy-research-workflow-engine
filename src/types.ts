@@ -15,6 +15,8 @@ export interface Meta {
   rationale?: string;
   risks?: string;
   assumptions?: string;
+  aiInvolvement?: string;
+  reviewNotes?: string;
 }
 
 export interface Stage {

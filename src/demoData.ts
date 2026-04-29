@@ -8,7 +8,10 @@ export const demoState: AppState = {
     organisation: "School of Public Health",
     description: "A study examining the relationship between urban air pollution exposure and respiratory health outcomes using large-scale datasets.",
     rationale: "To provide evidence-based insights for urban planning and public health interventions aimed at reducing respiratory diseases.",
-    risks: "Potential for data bias in socio-economic representation; reliance on third-party environmental sensors."
+    risks: "Potential for data bias in socio-economic representation; reliance on third-party environmental sensors.",
+    assumptions: "Assumes historical air quality data is representative of current trends.",
+    aiInvolvement: "AI is used for exploratory pattern detection and literature synthesis support.",
+    reviewNotes: "Initial design reviewed for data privacy compliance."
   },
   stages: [
     {
@@ -75,7 +78,10 @@ export const emptyState: AppState = {
     organisation: "",
     description: "",
     rationale: "",
-    risks: ""
+    risks: "",
+    assumptions: "",
+    aiInvolvement: "",
+    reviewNotes: ""
   },
   stages: [],
   globalRisks: [],

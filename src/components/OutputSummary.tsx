@@ -58,6 +58,18 @@ export function OutputSummary({ state }: Props) {
                 <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.assumptions}</td>
               </tr>
             )}
+            {meta.aiInvolvement && (
+              <tr>
+                <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>AI Involvement</th>
+                <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.aiInvolvement}</td>
+              </tr>
+            )}
+            {meta.reviewNotes && (
+              <tr>
+                <th style={{ padding: '8px 0', border: 'none', verticalAlign: 'top' }}>Human Review Notes</th>
+                <td style={{ padding: '8px 0', border: 'none', whiteSpace: 'pre-wrap' }}>{meta.reviewNotes}</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </section>

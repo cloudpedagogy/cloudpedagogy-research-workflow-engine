@@ -61,3 +61,11 @@ The app provides a structured, governance-first taxonomy for research workflows 
 - **Phase 5 Assignment**: Inferred from README and context within the CloudPedagogy ecosystem.
 - **Upstream/Downstream Flow**: Inferred from ecosystem descriptions in the README.
 - **Future Enhancements**: Suggested based on the existing tool's focus on research governance.
+
+---
+
+## Capability and Governance Alignment
+This tool is aligned with the CloudPedagogy Capability and Governance standard.
+Capability: The tool supports development of practical AI capability through structured interaction and workflow use.
+Governance: The tool includes lightweight, optional fields that make assumptions, risks, and decisions visible and reviewable.
+This alignment ensures the tool supports both effective use of AI and responsible, accountable practice.
